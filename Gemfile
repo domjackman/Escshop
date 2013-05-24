@@ -34,6 +34,15 @@ gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails"
 
+#Rsepc for testing
+gem 'rspec-rails', group: [:test, :development]
+
+group :test do
+	# integration testing
+	gem 'capybara'
+end
+
+
 
 
 
