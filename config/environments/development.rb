@@ -1,3 +1,6 @@
+Stripe.api_key = "sk_test_2HbZqXrma8SGfk98Q70QVAC6"
+STRIPE_PUBLIC_KEY = "pk_test_OrnShsr7zIJvmjpx7Ndaeu8G"
+
 Escshop::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
