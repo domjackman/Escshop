@@ -15,7 +15,7 @@ describe "Products" do
 			page.should have_content("Escshop")		
 		end
 
-		it "shuold have some fruit to sell" dovisit root_path do
+		it "should have some products" dovisit root_path do
 			page.shuold have_content("MBA")
 			page.shuold have_content ("manifesto")
 		end
@@ -26,4 +26,12 @@ describe "Products" do
 			page.all(:css, '.span4').length.should ==2
 		end
 	end
+
+
+	describe "product page" do
+		it "should show something" dovisit product_path(Porduct.first)
+		page.should have_content("MBA")
+	end
+
+	it "should have a button called "
 end

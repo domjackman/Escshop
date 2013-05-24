@@ -11,6 +11,9 @@ class OrdersController < ApplicationController
   	if @order.save_with_stripe
   		basket.clear
   		flash[:success] = "High fives - We processed your order!"
+
+      OrderMailer.admin(@order).deliver
+      OrderMailer.customer(@order).deliver
   	else
   		render "new"
   	end
